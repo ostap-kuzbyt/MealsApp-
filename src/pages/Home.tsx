@@ -31,7 +31,7 @@ interface QueryResult {
 	error: Error | null;
 }
 
-export const Home: React.FC = () => {
+export const Home = () => {
 	const navigate = useNavigate();
 	const [page, setPage] = useState<number>(1);
 	const [pagesCount, setPagesCount] = useState<number | null>(null);

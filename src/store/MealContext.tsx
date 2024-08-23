@@ -1,4 +1,4 @@
-import React, { createContext, useState, ReactNode } from 'react';
+import  { createContext, useState, ReactNode } from 'react';
 
 type Meal = {
 	idMeal: string;
@@ -21,9 +21,9 @@ interface MealProviderProps {
 	children: ReactNode;
 }
 
-export const MealProvider: React.FC<MealProviderProps> = ({ children }) => {
+export const MealProvider = ({ children }: MealProviderProps) => {
 	const [meals, setMeals] = useState<Meal[]>([]);
-	
+
 	const addMealToBasket = (meal: Meal) => {
 		setMeals(prevMeals => [...prevMeals, meal]);
 	};

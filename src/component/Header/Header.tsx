@@ -1,7 +1,7 @@
 import { Box, Flex } from '@chakra-ui/react';
 import { Link, useLocation } from 'react-router-dom';
 
-export const Header: React.FC = () => {
+export const Header= () => {
 	const { pathname } = useLocation();
 
 	const isActive = (path: string): boolean => pathname === path;

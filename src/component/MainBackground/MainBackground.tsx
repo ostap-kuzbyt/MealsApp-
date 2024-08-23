@@ -6,7 +6,7 @@ interface MainBackgroundProps {
 	children: ReactNode;
 }
 
-export const MainBackground: React.FC<MainBackgroundProps> = ({ children }) => {
+export const MainBackground = ({ children }: MainBackgroundProps) => {
 	return (
 		<Box
 			bgImage={bgLogo}

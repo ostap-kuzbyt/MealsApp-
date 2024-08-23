@@ -10,7 +10,7 @@ import {
 import { useContext } from 'react';
 import { MealContext } from '../store/MealContext';
 
-export const RecipeBasket: React.FC = () => {
+export const RecipeBasket = () => {
 	const { meals } = useContext(MealContext);
 
 	const ingredientTotals = meals.reduce<Record<string, number>>(
